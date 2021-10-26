@@ -68,8 +68,8 @@
     height: 500px;
     background: rgba(0, 0, 0, 0.363);
     color: rgb(255, 255, 255);
-    top: 57%;
-    left: 45%; 
+    top: 60%;
+    left: 65%; 
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing:border-box;

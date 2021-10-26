@@ -6,7 +6,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 
-
 // const productosBackend = [
 //       {id: "OOOO1",
 //       nombre: "camisa",
@@ -20,7 +19,6 @@ import axios from "axios";
 
 
 const Gestion_productos = () =>{
-      
       const [productos, setMostrarProductos] = useState([]);
       useEffect(() => {
             const options = { method: 'GET', url: 'http://localhost:3001/api/product' };
@@ -33,8 +31,6 @@ const Gestion_productos = () =>{
                   console.error(error);
             });
       }, [setMostrarProductos]);
-
-      
 
       
       

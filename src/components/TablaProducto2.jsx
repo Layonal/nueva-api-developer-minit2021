@@ -20,10 +20,10 @@ const FilaProducto =({productos})=>{
   const actualizarproducto = async()=>{
     console.log(infoNuevoProducto)
     const options = {
-      method: 'PUT',
-      url: 'http://localhost:3001/api/product',
+      method: 'POST',
+      url: 'http://localhost:3001/api/venta',
       headers: {'Content-Type': 'application/json'},
-      data: { ...infoNuevoProducto, id: productos._id }
+      data: {codigo: 'algo', nombre: 'layo', precio: 902343, estado: 'algo'}
     };
     
     await axios
@@ -34,7 +34,7 @@ const FilaProducto =({productos})=>{
       setEdit(false);
       window.location.reload();
     }).catch(function (error) {
-      toast.success("Error al modificar producto")
+      toast.error("Error al modificar producto")
       console.error(error); //revisar mas adelante como hacerlo sin f5 forzado
       
     });
@@ -166,13 +166,8 @@ const TablaProducto2 = ({listaProductos, setMostrarProductos }) =>{
       console.log("datos del form enviados", nuevoProducto); //" aca se puede ver en la consoloa el Json"
       await axios.post("http://localhost:3001/api/product", nuevoProducto)
   }
-  
-    
+ 
     return (
-
-      
-            
-         
             <section className="login_Developer_2"> 
 
               <form ref={form} onSubmit ={submitForm}>

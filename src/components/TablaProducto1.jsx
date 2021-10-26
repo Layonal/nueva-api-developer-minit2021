@@ -1,8 +1,4 @@
-
 // const TablaProducto1 = () =>{
-
-    
-
 //     return (
 //         <div>
 //         <div className="conten">
@@ -12,9 +8,7 @@
 //               <h1>PRODUCTOS</h1>
 //                <form>
 //                <label for="Constraseña">Buscar producto</label>
-//                <input 
-                
-//                type="text" placeholder="Ingrese producto"></input>
+//                <input type="text" placeholder="Ingrese producto"></input>
 //               <input type="submit" value="Buscar"></input> 
 //                Productos
 //               <select>
